@@ -1,8 +1,13 @@
-import React from "react"
-
-function App() {
-    return(React.createElement("div", {
-        className: "container"
-    }, React.createElement("h1", {}, "Placzigira")))
-}
-export default App
+import Header from "./Components/Header";
+import FeedbackItem from "./Components/FeedbackItem";
+const App = () => {
+  return (
+    <>
+    <Header />
+    <div className="container">
+    <FeedbackItem />
+    </div>
+    </>
+  );
+};
+export default App;
